@@ -30,11 +30,11 @@ pdfmetrics.registerFont(TTFont("CVArial", str(FONT_DIR / "arial.ttf")))
 pdfmetrics.registerFont(TTFont("CVArial-Bold", str(FONT_DIR / "arialbd.ttf")))
 pdfmetrics.registerFontFamily("CVArial", normal="CVArial", bold="CVArial-Bold")
 
-INK = colors.HexColor("#1E2C34")
-NAVY = colors.HexColor("#183F55")
-TEAL = colors.HexColor("#217B87")
-MUTED = colors.HexColor("#53636C")
-RULE = colors.HexColor("#CBD6DB")
+INK = colors.HexColor("#222222")
+NAVY = colors.HexColor("#222222")
+ACCENT = colors.HexColor("#C41230")  # Carnegie Mellon red, used as a restrained application accent.
+MUTED = colors.HexColor("#5F6368")
+RULE = colors.HexColor("#D7D8DA")
 
 doc = SimpleDocTemplate(
     str(OUTPUT),
@@ -46,18 +46,21 @@ doc = SimpleDocTemplate(
     title="NDJOGOU MPIRA OKOUMBA David Loic - CV",
     author="NDJOGOU MPIRA OKOUMBA David Loic",
 )
-WIDTH = A4[0] - doc.leftMargin - doc.rightMargin
+# SimpleDocTemplate's default frame has 6 pt of internal padding on each side.
+# Match table widths to the actual usable frame so entry titles and dates align
+# with paragraphs and section rules instead of spilling past the left margin.
+WIDTH = A4[0] - doc.leftMargin - doc.rightMargin - 12
 
 styles = {
     "name": ParagraphStyle("name", fontName="CVArial-Bold", fontSize=20, leading=23, textColor=NAVY, spaceAfter=2),
-    "headline": ParagraphStyle("headline", fontName="CVArial-Bold", fontSize=9.2, leading=11.7, textColor=TEAL, spaceAfter=5),
+    "headline": ParagraphStyle("headline", fontName="CVArial-Bold", fontSize=9.2, leading=11.7, textColor=ACCENT, spaceAfter=5),
     "contact": ParagraphStyle("contact", fontName="CVArial", fontSize=8.55, leading=11.5, textColor=MUTED),
     "entry": ParagraphStyle("entry", fontName="CVArial-Bold", fontSize=10, leading=12.7, textColor=INK),
     "date": ParagraphStyle("date", fontName="CVArial-Bold", fontSize=8.6, leading=11.5, textColor=NAVY, alignment=TA_RIGHT),
     "meta": ParagraphStyle("meta", fontName="CVArial", fontSize=8.65, leading=11.5, textColor=MUTED, spaceAfter=2),
     "body": ParagraphStyle("body", fontName="CVArial", fontSize=9.05, leading=12.2, textColor=INK),
     "bullet": ParagraphStyle("bullet", fontName="CVArial", fontSize=9.05, leading=12.2, textColor=INK, leftIndent=12, firstLineIndent=-10, spaceAfter=2),
-    "link": ParagraphStyle("link", fontName="CVArial", fontSize=8.3, leading=10.6, textColor=TEAL),
+    "link": ParagraphStyle("link", fontName="CVArial", fontSize=8.3, leading=10.6, textColor=ACCENT),
 }
 
 
@@ -76,7 +79,7 @@ class SectionHeading(Flowable):
         return available_width, self.height
 
     def draw(self):
-        self.canv.setFillColor(TEAL)
+        self.canv.setFillColor(ACCENT)
         self.canv.rect(0, 3, 3, 14, stroke=0, fill=1)
         self.canv.setFillColor(NAVY)
         self.canv.setFont("CVArial-Bold", 9.8)
@@ -111,7 +114,7 @@ def project(title, date, stack, bullets, source=None):
     content.extend(p("- " + bullet, "bullet") for bullet in bullets)
     if source:
         content.append(p(
-            '<b>Source:</b> <link href="https://github.com/ndjogoudavid/pharmacy-management_25713" color="#217B87">'
+            '<b>Source:</b> <link href="https://github.com/ndjogoudavid/pharmacy-management_25713" color="#C41230">'
             "github.com/ndjogoudavid/pharmacy-management_25713</link>",
             "link",
         ))
@@ -120,7 +123,7 @@ def project(title, date, stack, bullets, source=None):
 
 
 story = [
-    HRFlowable(width="100%", thickness=2.5, color=NAVY, spaceAfter=10),
+    HRFlowable(width="100%", thickness=2.5, color=ACCENT, spaceAfter=10),
     p("NDJOGOU MPIRA OKOUMBA David Loic", "name"),
     p("SOFTWARE ENGINEERING STUDENT  |  KIGALI, RWANDA", "headline"),
     p(
