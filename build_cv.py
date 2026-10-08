@@ -59,6 +59,7 @@ styles = {
     "date": ParagraphStyle("date", fontName="CVArial-Bold", fontSize=8.6, leading=11.5, textColor=NAVY, alignment=TA_RIGHT),
     "meta": ParagraphStyle("meta", fontName="CVArial", fontSize=8.65, leading=11.5, textColor=MUTED, spaceAfter=2),
     "body": ParagraphStyle("body", fontName="CVArial", fontSize=9.05, leading=12.2, textColor=INK),
+    "coursework": ParagraphStyle("coursework", fontName="CVArial", fontSize=9.05, leading=12.2, textColor=INK, leftIndent=14),
     "bullet": ParagraphStyle("bullet", fontName="CVArial", fontSize=9.05, leading=12.2, textColor=INK, leftIndent=12, firstLineIndent=-10, spaceAfter=2),
     "link": ParagraphStyle("link", fontName="CVArial", fontSize=8.3, leading=10.6, textColor=ACCENT),
 }
@@ -149,7 +150,7 @@ story = [
         p(
             "<b>Relevant coursework:</b> Data Structures and Algorithms; Probability and Statistics; "
             "Multivariable Calculus and ODE; Object-Oriented Programming; Software Testing Techniques.",
-            "body",
+            "coursework",
         ),
         Spacer(1, 7),
         entry_header("Lycee Jacques Prevert", "2012 - 2019"),
