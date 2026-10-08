@@ -22,7 +22,7 @@ from reportlab.platypus import (
 
 
 ROOT = Path(__file__).resolve().parent
-OUTPUT = ROOT / "docs/files/NDJOGOU_MPIRA_OKOUMBA_DAVID_LOIC_CV.pdf"
+OUTPUT = ROOT / "docs/files/Ndjogou_David_CV.pdf"
 OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 
 FONT_DIR = Path(r"C:\Windows\Fonts")

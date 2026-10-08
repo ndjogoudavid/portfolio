@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Ndjogou David is an Information Technology student at AUCA, majoring in Software Engineering. Explore selected software projects and certificates.">
-  <meta name="theme-color" content="#f4f2eb">
+  <meta name="theme-color" content="#f8f7f2">
   <title>Ndjogou David — Software Engineering</title>
   <link rel="stylesheet" href="assets/css/portfolio.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header container">
-    <a class="site-name" href="index.html">Ndjogou David</a>
+    <a class="site-name" href="./">Ndjogou David</a>
     <nav aria-label="Main navigation">
       <a href="#projects">Projects</a>
       <a href="#about">About</a>
@@ -24,17 +24,17 @@
     <section class="hero container" aria-labelledby="intro-title">
       <div class="hero-copy">
         <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Software Engineering · Kigali, Rwanda</p>
-        <h1 id="intro-title">Ndjogou<br><span>David</span></h1>
-        <p class="hero-summary">I study Information Technology at AUCA, majoring in Software Engineering. I build web, desktop and mobile applications, with a focus on Java, full-stack development and practical public-service workflows.</p>
+        <h1 id="intro-title">Ndjogou <span>David</span></h1>
+        <p class="hero-summary">I build web, desktop and mobile applications around practical workflows, from full-stack business tools to civic-service systems.</p>
         <div class="hero-actions">
           <a class="button" href="#projects">Explore selected work <span aria-hidden="true">↓</span></a>
-          <a class="text-action" href="files/NDJOGOU_MPIRA_OKOUMBA_DAVID_LOIC_CV.pdf" download>Download CV <span aria-hidden="true">↗</span></a>
+          <a class="text-action" href="files/Ndjogou_David_CV.pdf" download="Ndjogou_David_CV.pdf">Download CV <span aria-hidden="true">↓</span></a>
         </div>
-        <div class="hero-meta"><span>Currently at AUCA</span><span>Java · React · Spring Boot</span></div>
+        <div class="hero-meta"><span>AUCA · BSc Information Technology</span><span>Java · React · Spring Boot</span></div>
       </div>
       <figure class="hero-portrait">
-        <img src="images/profile.jpg" alt="Portrait of Ndjogou David" width="280" height="320">
-        <figcaption><span>Kigali, Rwanda</span><span>Information Technology, AUCA</span></figcaption>
+        <img src="images/profile.jpg" alt="Portrait of Ndjogou David" width="1024" height="1280">
+        <figcaption><span>Kigali, Rwanda</span><span>Software Engineering · AUCA</span></figcaption>
       </figure>
     </section>
 
@@ -42,7 +42,7 @@
       <div class="container">
         <div class="section-heading">
           <div><p class="eyebrow">A selection of work · 2025—2026</p><h2 id="projects-title">Projects</h2></div>
-          <p>Current applications first, followed by selected university work.</p>
+          <p>Systems built for public services, commerce and everyday use.</p>
         </div>
 
         <article class="project-feature">
@@ -58,35 +58,47 @@
           </div>
         </article>
 
-        <div class="project-subheading"><h3>Applications</h3><span>Selected work from my CV and current builds</span></div>
+        <div class="project-subheading"><h3>Applications</h3><span>Selected software work</span></div>
         <div class="project-grid application-grid">
-          <article class="project-card project-card-text">
-            <div class="project-card-copy"><p class="project-type">Solo project · Desktop</p><h3>Pharmacy Management</h3><p>A Java desktop application for pharmacy inventory, sales, customer and supplier records, and reporting workflows.</p><p class="stack">Java <b>·</b> PostgreSQL</p></div>
+          <article class="project-card">
+            <div class="project-visual visual-market" aria-label="Illustrative marketplace interface with product cards and order summary">
+              <div class="mock-top"><span class="mock-brand">AxM</span><span class="mock-search">Search products</span><span class="mock-bag">Bag</span></div>
+              <div class="market-layout"><div class="market-side"><i></i><i></i><i></i><i></i></div><div class="market-main"><div class="mock-heading"><small>LOCAL &amp; IMPORTED</small><strong>Browse products</strong></div><div class="product-row"><span class="product-block product-one"><i></i></span><span class="product-block product-two"><i></i></span><span class="product-block product-three"><i></i></span></div><div class="market-foot"><span>Seller shop</span><span>Order tracking&nbsp; →</span></div></div></div>
+              <span class="visual-caption">Marketplace · interface illustration</span>
+            </div>
+            <div class="project-card-copy"><p class="project-type">Marketplace · Completed 2026</p><h3>AxM Shop</h3><p>A Gabon-focused marketplace for local sellers and imported products, with ordering and delivery tracking.</p><div class="project-bottomline"><span class="stack">Next.js · TypeScript · PostgreSQL</span></div></div>
           </article>
-          <article class="project-card project-card-text">
-            <div class="project-card-copy"><p class="project-type">Web application · AUCA</p><h3>Pharmacy Management</h3><p>A separate Spring Boot and React application for medicines, prescriptions, billing and role-based access.</p><p class="stack">Spring Boot <b>·</b> React <b>·</b> PostgreSQL <b>·</b> JWT</p><a class="arrow-link" href="https://github.com/ndjogoudavid/pharmacy-management_25713" target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span></a></div>
+          <article class="project-card">
+            <div class="project-visual visual-pharmacy" aria-label="Illustrative pharmacy dashboard with medicine inventory and billing summary">
+              <div class="pharmacy-shell"><div class="pharmacy-nav"><b aria-hidden="true">+</b><i></i><i></i><i></i><i></i></div><div class="pharmacy-content"><div class="mock-heading"><small>OVERVIEW</small><strong>Good morning</strong></div><div class="metric-row"><span><small>Products</small><b>Inventory</b></span><span><small>Today</small><b>Sales</b></span><span><small>Records</small><b>Patients</b></span></div><div class="inventory-lines"><i></i><i></i><i></i></div></div></div>
+              <span class="visual-caption">Inventory &amp; billing · interface illustration</span>
+            </div>
+            <div class="project-card-copy"><p class="project-type">Independent web application</p><h3>Pharmacy system</h3><p>Medicine records, prescriptions and billing, with separate access for staff and patients.</p><div class="project-bottomline"><span class="stack">Spring Boot · React · PostgreSQL</span><a class="project-arrow" href="https://github.com/ndjogoudavid/pharmacy-management_25713" target="_blank" rel="noopener noreferrer" aria-label="View Pharmacy system source">↗</a></div></div>
           </article>
-          <article class="project-card project-card-text">
-            <div class="project-card-copy"><p class="project-type">Solo project · Web application</p><h3>Household Chore Manager</h3><p>A task-scheduling application with persistent storage, automated tests and a focus on everyday household workflows.</p><p class="stack">Spring Boot <b>·</b> Thymeleaf <b>·</b> PostgreSQL <b>·</b> Docker</p></div>
+          <article class="project-card">
+            <div class="project-visual visual-health" aria-label="Illustrative mobile health screen with care categories and appointment card">
+              <div class="phone-frame"><div class="phone-status"><span>9:41</span><span>•••</span></div><div class="health-greeting"><small>NTCHIRÉ</small><strong>Bienvenue</strong><span>Votre santé, plus proche.</span></div><div class="health-tiles"><i>+</i><i>⌂</i><i>◷</i></div><div class="appointment-card"><small>VOTRE ESPACE SANTÉ</small><b>Services de santé</b><span>Parcourir les services</span></div><div class="phone-tabs"><i></i><i></i><i></i><i></i></div></div>
+              <span class="visual-caption">Digital health · interface illustration</span>
+            </div>
+            <div class="project-card-copy"><p class="project-type">Digital health · In development</p><h3>Ntchiré</h3><p>A mobile health platform concept for Gabon, backed by a Flutter app and a NestJS API.</p><div class="project-bottomline"><span class="stack">Flutter · NestJS · PostgreSQL</span><span class="project-arrow" aria-hidden="true">↗</span></div></div>
           </article>
-          <article class="project-card project-card-text">
-            <div class="project-card-copy"><p class="project-type">Collaborative coursework</p><h3>BloodDonorSystem</h3><p>A team semester project for managing blood-donation workflows and records through a web application.</p><p class="stack">ASP.NET <b>·</b> C# <b>·</b> SQL Server</p></div>
-          </article>
-          <article class="project-card project-card-text">
-            <div class="project-card-copy"><p class="project-type">Completed project · Marketplace</p><h3>AxM Shop</h3><p>A completed marketplace build for local sellers and imported goods, with seller and customer workflows, order and delivery tracking, and a simulated checkout flow.</p><p class="stack">Next.js <b>·</b> TypeScript <b>·</b> PostgreSQL <b>·</b> Prisma</p></div>
-          </article>
-          <article class="project-card project-card-text">
-            <div class="project-card-copy"><p class="project-type">Additional build · Digital health</p><h3>Ntchiré</h3><p>A digital-health platform for Gabon, with a Flutter mobile app and a NestJS/PostgreSQL backend. It is still under development, not a live public health service.</p><p class="stack">Flutter <b>·</b> NestJS <b>·</b> PostgreSQL</p></div>
-          </article>
-          <article class="project-card project-card-text">
-            <div class="project-card-copy"><p class="project-type">Additional build · Mobile learning</p><h3>Lubao</h3><p>A language-learning app focused on Fang, Punu and Obamba, with lessons, quizzes, a dictionary and community features.</p><p class="stack">Expo <b>·</b> React Native <b>·</b> Supabase <b>·</b> TypeScript</p></div>
+          <article class="project-card">
+            <div class="project-visual visual-language" aria-label="Illustrative language learning screen with a Fang vocabulary prompt and progress markers">
+              <div class="lesson-card"><div class="lesson-top"><span>FANG · LESSON 04</span><span>•••</span></div><div class="lesson-mark">Á</div><small>WORD OF THE DAY</small><strong>Today’s lesson</strong><div class="lesson-answer"><span>Listen</span><i>▶</i></div><div class="lesson-progress"><i></i><i></i><i></i><i></i><i></i></div></div>
+              <span class="visual-caption">Language learning · interface illustration</span>
+            </div>
+            <div class="project-card-copy"><p class="project-type">Language learning</p><h3>Lubao</h3><p>Lessons, quizzes and a dictionary for Fang, Punu and Obamba learners.</p><div class="project-bottomline"><span class="stack">Expo · React Native · Supabase</span><span class="project-arrow" aria-hidden="true">↗</span></div></div>
           </article>
         </div>
 
         <div class="project-subheading coursework-heading"><h3>Coursework</h3><span>Selected university projects</span></div>
         <div class="project-grid coursework-grid">
           <article class="project-card project-card-text">
-            <div class="project-card-copy"><p class="project-type">Team coursework · Android</p><h3>Immunization Planner &amp; Tracker</h3><p>A group project exploring child vaccination schedules, records, and data exchange through HL7 FHIR.</p><p class="stack">Java <b>·</b> Firebase <b>·</b> HL7 FHIR</p></div>
+            <div class="project-visual visual-immunization" aria-label="Illustrative immunization record screen with a child profile and schedule entries">
+              <div class="immunization-board"><div class="immunization-header"><span><small>IMMUNIZATION RECORDS</small><b>Child profile</b></span><i>＋ New record</i></div><div class="immunization-row"><b>01</b><span><strong>Vaccine record</strong><small>Schedule entry · Details</small></span><i>Open&nbsp; ↗</i></div><div class="immunization-row"><b>02</b><span><strong>Health history</strong><small>Patient record · Details</small></span><i>Open&nbsp; ↗</i></div><div class="immunization-row"><b>03</b><span><strong>Data exchange</strong><small>FHIR resources · Details</small></span><i>Open&nbsp; ↗</i></div></div>
+              <span class="visual-caption">Records &amp; schedules · interface illustration</span>
+            </div>
+            <div class="project-card-copy"><p class="project-type">Team coursework · Android</p><h3>Immunization Planner &amp; Tracker</h3><p>A group project exploring child vaccination schedules, records, and data exchange through HL7 FHIR.</p><div class="project-bottomline"><span class="stack">Java · Firebase · HL7 FHIR</span></div></div>
           </article>
           <article class="project-card project-card-image cave-card">
             <a class="project-thumb cave-thumb" href="images/the-cave-webpage.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open The Cave website screenshot"><img src="images/the-cave-webpage.jpg" alt="Website screenshot from The Cave web design coursework" width="1440" height="1000" loading="lazy"><span class="image-note">Web design coursework</span></a>
@@ -99,7 +111,7 @@
     <section class="about-section" id="about" aria-labelledby="about-title">
       <div class="container about-grid">
         <div class="about-lead"><p class="eyebrow">A little about me</p><h2 id="about-title">Grounded in software.<br>Curious about what it can do.</h2></div>
-        <div class="about-copy"><p>I study Information Technology at the Adventist University of Central Africa, majoring in Software Engineering. Most of my hands-on work has been in application development: building features, connecting interfaces to data, and shaping systems around practical workflows.</p><p>Java and full-stack web development are where I have the most experience. I’ve used C# in semester coursework and have basic experience with Python.</p>
+        <div class="about-copy"><p>Most of my work centers on application development: building features, connecting interfaces to data, and shaping software around practical workflows. Java and full-stack web development are where I have the most experience.</p><p>I’ve used C# in semester coursework and have basic experience with Python.</p>
           <dl class="skill-list"><div><dt>Education</dt><dd>AUCA · BSc Information Technology · Software Engineering</dd></div><div><dt>Languages</dt><dd>Java · JavaScript · SQL</dd></div><div><dt>Also used</dt><dd>C# in coursework · Basic Python · Android</dd></div><div><dt>Tools</dt><dd>Spring Boot · React · Node.js · PostgreSQL · Firebase</dd></div></dl>
         </div>
       </div>
@@ -107,18 +119,18 @@
 
     <section class="credentials-section container" id="certificates" aria-labelledby="certificates-title">
       <div class="section-heading credentials-heading"><div><p class="eyebrow">Training &amp; credentials</p><h2 id="certificates-title">Certificates</h2></div><p>Course completion and language proficiency certificates.</p></div>
-      <div class="certificate-list">
-        <a href="files/English-Proficiency-Certificate-AUCA.pdf" download><span class="certificate-number">01</span><span class="certificate-name"><strong>English Proficiency Certificate I &amp; II</strong><small>AUCA English Language Centre · Intermediate · 90 hours</small></span><span class="certificate-date">May 2025</span><span class="certificate-download" aria-label="Download">↓</span></a>
-        <a href="files/NetOps Certificate.pdf" download><span class="certificate-number">02</span><span class="certificate-name"><strong>Advanced Network Operations 2.0</strong><small>Cisco Networking Academy</small></span><span class="certificate-date">Course certificate</span><span class="certificate-download" aria-label="Download">↓</span></a>
-        <a href="files/Network Essentials Certificate.pdf" download><span class="certificate-number">03</span><span class="certificate-name"><strong>Networking Essentials</strong><small>Cisco Networking Academy</small></span><span class="certificate-date">Course certificate</span><span class="certificate-download" aria-label="Download">↓</span></a>
-        <a href="files/Operating Systems Basics Certificate.pdf" download><span class="certificate-number">04</span><span class="certificate-name"><strong>Operating Systems Basics</strong><small>Cisco Networking Academy</small></span><span class="certificate-date">Dec 2024</span><span class="certificate-download" aria-label="Download">↓</span></a>
+      <div class="certificate-grid">
+        <a class="certificate-card" href="files/English-Proficiency-Certificate-AUCA.pdf" download><span class="certificate-icon" aria-hidden="true">EN</span><span class="certificate-name"><strong>English Proficiency I &amp; II</strong><small>AUCA English Language Centre · Intermediate · 90 hours</small></span><span class="certificate-download" aria-label="Download certificate">↓</span></a>
+        <a class="certificate-card" href="files/NetOps Certificate.pdf" download><span class="certificate-icon certificate-cisco" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 7.5 12 12m5-4.5L12 12m0 0v5"/><circle cx="7" cy="6" r="2"/><circle cx="17" cy="6" r="2"/><circle cx="12" cy="19" r="2"/></svg></span><span class="certificate-name"><strong>Advanced Network Operations 2.0</strong><small>Cisco Networking Academy</small></span><span class="certificate-download" aria-label="Download certificate">↓</span></a>
+        <a class="certificate-card" href="files/Network Essentials Certificate.pdf" download><span class="certificate-icon certificate-cisco" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 7.5 12 12m5-4.5L12 12m0 0v5"/><circle cx="7" cy="6" r="2"/><circle cx="17" cy="6" r="2"/><circle cx="12" cy="19" r="2"/></svg></span><span class="certificate-name"><strong>Networking Essentials</strong><small>Cisco Networking Academy</small></span><span class="certificate-download" aria-label="Download certificate">↓</span></a>
+        <a class="certificate-card" href="files/Operating Systems Basics Certificate.pdf" download><span class="certificate-icon certificate-cisco" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 7.5 12 12m5-4.5L12 12m0 0v5"/><circle cx="7" cy="6" r="2"/><circle cx="17" cy="6" r="2"/><circle cx="12" cy="19" r="2"/></svg></span><span class="certificate-name"><strong>Operating Systems Basics</strong><small>Cisco Networking Academy · Dec 2024</small></span><span class="certificate-download" aria-label="Download certificate">↓</span></a>
       </div>
-      <div class="cv-strip"><div><p class="eyebrow">More detail</p><strong>Need my full background?</strong><span>Education, projects and technical skills in one page.</span></div><a class="button button-dark" href="cv.html">View CV <span aria-hidden="true">↗</span></a></div>
+      <div class="cv-strip"><div><p class="eyebrow">More detail</p><strong>CV</strong><span>Education, selected work and technical skills.</span></div><a class="button button-dark" href="cv/">View CV <span aria-hidden="true">↗</span></a></div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid"><a class="footer-name" href="index.html">Ndjogou David</a><div class="footer-contact"><span>Kigali, Rwanda</span><a href="mailto:ndjogoudaviddev@gmail.com">ndjogoudaviddev@gmail.com</a><a href="https://github.com/ndjogoudavid" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/ndjogoudavid" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div><small>© 2026 Ndjogou David</small></div>
+    <div class="container footer-grid"><a class="footer-name" href="./">Ndjogou David</a><div class="footer-contact"><span>Kigali, Rwanda</span><a href="mailto:ndjogoudaviddev@gmail.com">ndjogoudaviddev@gmail.com</a><a href="https://github.com/ndjogoudavid" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/ndjogoudavid" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div><small>© 2026 Ndjogou David</small></div>
   </footer>
 </body>
 </html>
