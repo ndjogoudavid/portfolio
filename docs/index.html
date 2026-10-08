@@ -1,222 +1,108 @@
-<!DOCTYPE HTML>
-<!-- Solid State by HTML5 UP | html5up.net -->
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>NDJOGOU David Loïc | Portfolio</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-  integrity="sha512-dYUA/uxRbdx22Jxz+vE5w/N+jMjnNl+uSGDSeYpHd9Pq70c1l0qeV9LsScXtG0Jq1OkSbUW71tbp4PvQ+XNZew=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/>
-
-
-  <link rel="stylesheet" href="assets/css/main.css" />
-  
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of NDJOGOU MPIRA OKOUMBA David Loic, software engineering student at AUCA in Kigali, Rwanda.">
+  <title>David Loic Ndjogou — Software Projects</title>
+  <link rel="stylesheet" href="assets/css/portfolio.css">
 </head>
-<body class="is-preload">
-  <div id="page-wrapper">
-
-    <!-- Header -->
-    <header id="header" class="alt">
-      <h1><a href="index.html">NDJOGOU David Loïc</a></h1>
-      <nav>
-        <a href="#menu">Menu</a>
-      </nav>
-    </header>
-
-    <!-- Menu -->
-    <nav id="menu">
-      <div class="inner">
-        <h2>Menu</h2>
-        <ul class="links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="cv.html">View My CV</a></li>
-        </ul>
-        <a href="#" class="close">Close</a>
-      </div>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header container">
+    <a class="site-name" href="index.html">David Loic Ndjogou</a>
+    <nav aria-label="Main navigation">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="cv.html">CV</a>
+      <a href="mailto:ndjogoudaviddev@gmail.com">Email</a>
     </nav>
+  </header>
 
-    <!-- Banner -->
-    <section id="banner">
-      <div class="inner">
-        <h2>NDJOGOU MPIRA OKOUMBA David Loïc</h2>
-        <p>Software Engineering Student @AUCA</p>
-        <img src="images/profile.jpg" alt="Profile Picture" style="width: 100px; border-radius: 50%; margin: 20px 0;" />
-        <p style="max-width: 700px; margin: 20px auto 0 auto; text-align: justify;">
-          Passionate about software development, I specialize in Java applications and full-stack web technologies. I’ve worked on practical projects like a Pharmacy Management System and a responsive web portfolio ("The Cave").<br><br>
-          I’m eager to contribute to impactful tech solutions in Rwanda and Central Africa, working with agile teams that prioritize clean code, thoughtful design, and meaningful impact.
-        </p>
-        <a href="cv.html" class="button primary">View My CV</a>
+  <main id="main" class="container">
+    <section class="intro" aria-labelledby="intro-title">
+      <div>
+        <p class="location">Software engineering student · Kigali, Rwanda</p>
+        <h1 id="intro-title">David Loic Ndjogou</h1>
+        <p>I study Information Technology at the Adventist University of Central Africa, majoring in Software Engineering. These are the projects I have worked on, from a Java desktop pharmacy system to a municipal service request platform.</p>
+        <p class="intro-links"><a href="#projects">See projects</a><a href="files/NDJOGOU_MPIRA_OKOUMBA_DAVID_LOIC_CV.pdf" download>Download CV (PDF)</a></p>
       </div>
+      <img class="portrait" src="images/profile.jpg" alt="David Loic Ndjogou" width="165" height="190">
     </section>
 
-    <!-- Projects -->
-    <section id="wrapper">
-      <section class="wrapper spotlight style1">
-        <div class="inner">
-          <a href="images/pharmacy-project.jpg" class="image"><img src="images/pharmacy-project.jpg" alt="Pharmacy Management System Screenshot" /></a>
-          <div class="content">
-            <h2 class="major">Pharmacy Management System</h2>
-            <p>A Java-based desktop application that allows pharmacies to manage inventory, customers, sales, and purchases with an intuitive UI and secure data handling.</p>
-            <a href="https://github.com/TonkuBadecon/pharmacy-management_25713" target="_blank" class="special">View Project</a>
-          </div>
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="section-head"><h2 id="projects-title">Projects</h2><p>Selected work, 2025–2026</p></div>
+
+      <article class="project">
+        <div class="project-side"><span>01</span><span>Solo project</span></div>
+        <div class="project-content">
+          <h3>Pharmacy Management System <span>Desktop</span></h3>
+          <p>A Java desktop application for inventory, sales, customers, suppliers, and reporting, with PostgreSQL for storage.</p>
+          <p class="tech">Java · PostgreSQL · Desktop UI</p>
         </div>
-      </section>
+        <div class="project-links"><span>2025</span></div>
+      </article>
 
-      <section class="wrapper alt spotlight style2">
-        <div class="inner">
-          <a href="#" class="image"><img src="images/the-cave-webpage.jpg" alt="The Cave Web Design Project Screenshot" /></a>
-          <div class="content">
-            <h2 class="major">The Cave</h2>
-            <p>A locally hosted website built for Web Design class featuring responsive layouts and interactive UI built with HTML, CSS, and JavaScript.</p>
-            <a href="https://github.com/TonkuBadecon/The-Cave" target="_blank" class="special">View Project</a>
-          </div>
+      <article class="project">
+        <div class="project-side"><span>02</span><span>Web application</span></div>
+        <div class="project-content">
+          <h3>Pharmacy Management System <span>Web</span></h3>
+          <p>A separate Spring Boot and React application covering medicines, prescriptions, and billing. The repository includes JWT authentication and role-based access.</p>
+          <p class="tech">Spring Boot · React · PostgreSQL</p>
         </div>
-      </section>
-    </section>
+        <div class="project-links"><span>2025</span><a href="https://github.com/ndjogoudavid/pharmacy-management_25713" target="_blank" rel="noopener noreferrer">Code ↗</a></div>
+      </article>
 
-    <!-- About Me -->
-    <section id="about" class="wrapper style1">
-      <div class="inner">
-        <h2 class="major">About Me</h2>
-        <p>
-          I’m NDJOGOU MPIRA OKOUMBA David Loïc, a passionate software engineering student currently based in Kigali, Rwanda. I’m constantly refining my craft in building thoughtful, efficient, and scalable tech solutions.
-        </p>
-        <p>
-          From school-based projects to self-initiated platforms, my development experience bridges both desktop and web applications. I enjoy crafting clean, reusable code and exploring the balance between performance and user experience.
-        </p>
-        <p>
-          With every project, I aim to sharpen my problem-solving lens and understand the people behind the problem. Whether through a line of backend logic or a user interface, I’m guided by intent, precision, and the desire to do work that speaks.
-        </p>
-        <p>
-          I believe in building for context-solutions that make sense where they matter. My journey continues through communities and collaborations that value clarity, impact, and learning.
-        </p>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="wrapper alt style2">
-      <div class="inner">
-        <h2 class="major">Technical Skills</h2>
-        <section class="features">
-          <article>
-            <span class="icon fas fa-code"></span>
-            <h3>Programming</h3>
-            <p>Java, JavaScript, HTML5, CSS, C#, Python (basic)</p>
-          </article>
-          <article>
-            <span class="icon fas fa-database"></span>
-            <h3>Databases</h3>
-            <p>MySQL, PostgreSQL, SQLite, basic MongoDB, SSMS</p>
-          </article>
-          <article>
-            <span class="icon fas fa-laptop-code"></span>
-            <h3>Tools & IDEs</h3>
-            <p>IntelliJ, Android Studio, VS Code, Git, GitHub, Figma</p>
-          </article>
-          <article>
-            <span class="icon fas fa-project-diagram"></span>
-            <h3>Concepts</h3>
-            <p>OOP, Responsive Design, MVC, RESTful APIs</p>
-          </article>
-        </section>
-      </div>
-    </section>
-
-    <!-- Certificates & CV -->
-    <section id="certificates" class="wrapper style1">
-      <div class="inner">
-        <h2 class="major">Certificates & CV</h2>
-        <p>Selected certificates and résumé available for download below:</p>
-        <section class="features">
-          <article>
-            <span class="icon fas fa-network-wired"></span>
-            <h3>NetOps Certificate</h3>
-            <p>Core networking operations and automation skills from hands-on module.</p>
-            <a href="files/NetOps Certificate.pdf" class="button small" download>Download</a>
-          </article>
-          <article>
-            <span class="icon fas fa-sitemap"></span>
-            <h3>Network Essentials</h3>
-            <p>Foundation in IP, routing, switching, and network design fundamentals.</p>
-            <a href="files/Network Essentials Certificate.pdf" class="button small" download>Download</a>
-          </article>
-          <article>
-            <span class="icon fas fa-cogs"></span>
-            <h3>OS Basics Certificate</h3>
-            <p>Introduction to operating systems, UNIX commands, and user management.</p>
-            <a href="files/Operating Systems Basics Certificate.pdf" class="button small" download>Download</a>
-          </article>
-          <article>
-            <span class="icon fas fa-id-badge"></span>
-            <h3>Full CV</h3>
-            <p>Curriculum vitae including projects, skills, and professional experience.</p>
-            <a href="files/NDJOGOU-David-Loic-CV.pdf" class="button small" download>Download CV</a>
-          </article>
-        </section>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <section id="footer">
-      <div class="inner">
-        <h2 class="major">Contact</h2>
-        <form id="contact-form">
-          <div class="fields">
-            <div class="field">
-              <label for="name">Name</label>
-              <input type="text" name="name" id="name" required />
-            </div>
-            <div class="field">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" required />
-            </div>
-            <div class="field">
-              <label for="message">Message</label>
-              <textarea name="message" id="message" rows="4" required></textarea>
-            </div>
-          </div>
-          <ul class="actions">
-            <li><button type="submit" class="button primary">Send Message</button></li>
-          </ul>
-        </form>
-        <div id="success-message" style="display:none; color: limegreen; margin-top: 1em;">
-          Message sent successfully! Redirecting...
+      <article class="project">
+        <div class="project-side"><span>03</span><span>Final-year project</span></div>
+        <div class="project-content">
+          <h3>Owendo Municipal Workflow System</h3>
+          <p>An ongoing project for municipal service requests and staff workflows. It uses a React frontend, Node.js/Express backend, and PostgreSQL database.</p>
+          <p class="tech">React · Node.js · PostgreSQL</p>
         </div>
-        <ul class="contact">
-          <li class="icon fas fa-home">AUCA - Adventist University of Central Africa, Kigali, Rwanda</li>
-          <li class="icon fas fa-phone">+250 790801245</li>
-          <li class="icon fas fa-envelope"><a href="mailto:tonkubadecon@gmail.com">tonkubadecon@gmail.com</a></li>
-          <li class="icon fab fa-linkedin"><a href="https://www.linkedin.com/in/ndjogoudavid">linkedin.com/in/ndjogoudavid</a></li>
-          <li class="icon fab fa-instagram"><a href="https://www.instagram.com/darealndj">@darealndj</a></li>
-        </ul>
-        <ul class="copyright">
-          <li>&copy; NDJOGOU David Loïc. All rights reserved.</li>
-        </ul>
+        <div class="project-links"><span>In progress</span></div>
+      </article>
+
+      <article class="project">
+        <div class="project-side"><span>04</span><span>Team coursework</span></div>
+        <div class="project-content">
+          <h3>Immunization Planner &amp; Tracker</h3>
+          <p>An Android application for vaccination planning and tracking, developed as a group project. The project uses Java, Firebase, and HL7 FHIR concepts.</p>
+          <p class="tech">Android / Java · Firebase · HL7 FHIR</p>
+        </div>
+        <div class="project-links"><span>2026</span></div>
+      </article>
+
+      <p class="more-work">Earlier coursework: <a href="https://github.com/ndjogoudavid/The-Cave" target="_blank" rel="noopener noreferrer">The Cave website ↗</a></p>
+    </section>
+
+    <section class="section about-grid" id="about" aria-labelledby="about-title">
+      <div><h2 id="about-title">About</h2></div>
+      <div>
+        <p>My full name is NDJOGOU MPIRA OKOUMBA David Loic. I study Information Technology, majoring in Software Engineering, at AUCA. I have worked mainly with Java and web applications. I’m interested in further study at the intersection of software, data, energy, and public policy.</p>
+        <dl class="facts">
+          <div><dt>Education</dt><dd>AUCA · BSc Information Technology, Software Engineering · 2022–present</dd></div>
+          <div><dt>Current tools</dt><dd>Java, JavaScript, Spring Boot, React, Node.js, PostgreSQL</dd></div>
+          <div><dt>Also used</dt><dd>C# for semester coursework; basic Python</dd></div>
+        </dl>
       </div>
     </section>
 
-  </div>
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script>
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      document.getElementById('success-message').style.display = 'block';
-      setTimeout(function() {
-        window.location.href = 'index.html';
-      }, 2000);
-    });
-  </script>
+    <section class="section" id="documents" aria-labelledby="documents-title">
+      <div class="section-head"><h2 id="documents-title">Documents</h2><p>CV and selected course certificates</p></div>
+      <ul class="document-list">
+        <li><a href="cv.html"><span>Curriculum vitae</span><span>View / PDF ↗</span></a></li>
+        <li><a href="files/NetOps Certificate.pdf" download><span>NetOps certificate</span><span>Download PDF ↓</span></a></li>
+        <li><a href="files/Network Essentials Certificate.pdf" download><span>Network Essentials certificate</span><span>Download PDF ↓</span></a></li>
+        <li><a href="files/Operating Systems Basics Certificate.pdf" download><span>Operating Systems Basics certificate</span><span>Download PDF ↓</span></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <div><strong>Contact</strong><a href="mailto:ndjogoudaviddev@gmail.com">ndjogoudaviddev@gmail.com</a></div>
+    <div class="social"><a href="https://github.com/ndjogoudavid" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/ndjogoudavid" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+    <small>© 2026 NDJOGOU MPIRA OKOUMBA David Loic</small>
+  </footer>
 </body>
 </html>
