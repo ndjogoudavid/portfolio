@@ -4,7 +4,7 @@ The public site files are in `docs/` on the repository's main branch. `docs/CNAM
 
 ## Update the CV
 
-Edit `build_cv.py`, then run it with Python and ReportLab from the repository root. It writes `docs/files/Ndjogou_David_CV.pdf`; the current copy is also saved in `AUCA/Portfolio/Ndjogou_David_CV.pdf` for application uploads. The website's `/cv/` page and homepage link to this download name.
+Edit `build_cv.py`, then run it with Python and ReportLab from the repository root. It writes `docs/files/NDJOGOU_David_CV.pdf`; the current copy is also saved in `AUCA/Portfolio/NDJOGOU_David_CV.pdf` for application uploads. The website's `/cv/` page links to this download name.
 
 ## Update the website
 

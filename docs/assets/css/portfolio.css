@@ -25,7 +25,6 @@ a:focus-visible { outline: 3px solid var(--sage); outline-offset: 4px; }
 .site-name { display: inline-flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 580; letter-spacing: -.035em; text-decoration: none; white-space: nowrap; }
 .site-name > span:last-child { display: inline-flex; gap: 4px; color: #58645a; }
 .site-name b { color: var(--ink); font-weight: 760; }
-.name-mark { display: grid; width: 34px; height: 34px; place-items: center; border: 1px solid #dce3d8; border-radius: 10px; background: #edf1e9; color: var(--sage-dark); font-size: 10px; font-weight: 800; letter-spacing: -.04em; box-shadow: 0 2px 6px rgba(46, 67, 51, .06); }
 .site-header nav { display: flex; align-items: center; gap: 6px; padding: 5px; border: 1px solid #e8e9e1; border-radius: 9px; background: rgba(255, 254, 250, .75); box-shadow: 0 3px 11px rgba(41, 53, 42, .035); }
 .site-header nav a { display: inline-flex; align-items: center; min-height: 34px; padding: 0 13px; border-radius: 6px; color: #59645b; font-size: 12px; font-weight: 640; text-decoration: none; transition: color .18s ease, background .18s ease, box-shadow .18s ease; }
 .site-header nav a:hover { background: #edf1e9; color: var(--sage-dark); }
@@ -248,7 +247,6 @@ h2 { margin: 0; font-size: clamp(38px, 5vw, 58px); font-weight: 620; letter-spac
   .site-header nav a { min-height: 31px; padding-inline: 7px; font-size: 9px; }
   .site-header nav .nav-contact { margin-left: 1px; padding-inline: 8px; }
   .site-name { gap: 7px; font-size: 12px; }
-  .name-mark { width: 30px; height: 30px; border-radius: 8px; font-size: 9px; }
   .hero { grid-template-columns: 1fr; gap: 29px; min-height: 0; padding-block: 47px 64px; }
   .hero-portrait { grid-row: 1; width: min(78%, 295px); max-width: none; justify-self: center; }
   .hero-portrait img { aspect-ratio: 4 / 5; object-position: center center; }
