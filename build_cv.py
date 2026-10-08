@@ -149,7 +149,7 @@ story = [
             "body",
         ),
         Spacer(1, 7),
-        entry_header("Lycee Jacques Prevert", "2016 - 2019"),
+        entry_header("Lycee Jacques Prevert", "2012 - 2019"),
         p("French Scientific Baccalaureate | Gabon", "meta"),
     ]),
     *section("Selected technical projects"),
