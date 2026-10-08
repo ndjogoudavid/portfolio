@@ -169,20 +169,20 @@ story = [
     ),
     project(
         "Owendo Municipal Workflow System",
-        "In progress",
+        "Completed 2026",
         "AUCA final-year project  |  React, Node.js / Express, PostgreSQL",
         [
-            "Developing a citizen portal for municipal service requests and progress tracking.",
-            "Building staff workflows for request follow-up and administrative correspondence.",
+            "Full-stack system for citizen requests, progress tracking, and municipal correspondence.",
+            "Citizen portal and staff workspace support request follow-up across municipal workflows.",
         ],
     ),
     project(
         "AxM Shop",
-        "In progress",
+        "Completed 2026",
         "Marketplace project  |  Next.js, TypeScript, PostgreSQL, Prisma",
         [
-            "Building a marketplace for Gabonese sellers and imported goods, with seller and customer workflows.",
-            "Includes order and delivery tracking; checkout currently uses a payment simulator.",
+            "Built a marketplace for Gabonese sellers and imported goods, with seller and customer workflows.",
+            "Implemented order and delivery tracking with a simulated checkout flow.",
         ],
     ),
     *section("Technical skills"),
