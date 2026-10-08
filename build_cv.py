@@ -32,7 +32,7 @@ pdfmetrics.registerFontFamily("CVArial", normal="CVArial", bold="CVArial-Bold")
 
 INK = colors.HexColor("#222222")
 NAVY = colors.HexColor("#222222")
-ACCENT = colors.HexColor("#C41230")  # Carnegie Mellon red, used as a restrained application accent.
+ACCENT = colors.HexColor("#557C63")  # Soft evergreen accent for the energy focus.
 MUTED = colors.HexColor("#5F6368")
 RULE = colors.HexColor("#D7D8DA")
 
@@ -114,7 +114,7 @@ def project(title, date, stack, bullets, source=None):
     content.extend(p("- " + bullet, "bullet") for bullet in bullets)
     if source:
         content.append(p(
-            '<b>Source:</b> <link href="https://github.com/ndjogoudavid/pharmacy-management_25713" color="#C41230">'
+            '<b>Source:</b> <link href="https://github.com/ndjogoudavid/pharmacy-management_25713" color="#557C63">'
             "github.com/ndjogoudavid/pharmacy-management_25713</link>",
             "link",
         ))
@@ -123,7 +123,7 @@ def project(title, date, stack, bullets, source=None):
 
 
 story = [
-    HRFlowable(width="100%", thickness=2.5, color=ACCENT, spaceAfter=10),
+    HRFlowable(width="100%", thickness=1.5, color=ACCENT, spaceAfter=10),
     p("NDJOGOU MPIRA OKOUMBA David Loic", "name"),
     p("SOFTWARE ENGINEERING STUDENT  |  KIGALI, RWANDA", "headline"),
     p(
