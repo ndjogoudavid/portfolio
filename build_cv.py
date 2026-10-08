@@ -59,7 +59,7 @@ def item(title, date, detail, body=None):
         for segment in simpleSplit(body, "Arial", 8, right-left):
             txt(segment, left, y, 8)
             y -= 10
-    y -= 6
+    y -= 4
 
 txt("NDJOGOU MPIRA OKOUMBA David Loic", left, y, 17, True)
 y -= 18
@@ -101,6 +101,18 @@ item("Household Chore Manager", "2025", "Spring Boot, Thymeleaf, PostgreSQL, Doc
      "Built a task scheduling application with persistence and automated tests.")
 item("BloodDonorSystem | collaborative coursework", "2025", "ASP.NET/C#, SQL Server",
      "Used C# and ASP.NET to complete a team semester project.")
+item("AxM Shop | additional build", "In development", "Next.js, TypeScript, PostgreSQL, Prisma",
+     "Marketplace concept for local sellers and imported goods, with order and delivery tracking and simulated checkout.")
+item("Ntchiré | additional build", "In development", "Flutter, NestJS, PostgreSQL",
+     "Digital-health platform for Gabon; the mobile and backend systems remain under development.")
+item("Lubao | additional build", "In development", "Expo, React Native, Supabase, TypeScript",
+     "Language-learning app for Fang, Punu and Obamba, with lessons, quizzes, dictionary and community features.")
+
+section("Certificates")
+txt("AUCA English Proficiency Certificate I & II (Intermediate, 90 hours); Cisco Networking Essentials;", left, y, 8)
+y -= 12
+txt("Advanced Network Operations 2.0; Operating Systems Basics.", left, y, 8)
+y -= 6
 
 section("Technical skills")
 for label, value in [
