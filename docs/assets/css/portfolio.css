@@ -86,63 +86,16 @@ h2 { margin: 0; font-size: clamp(38px, 5vw, 58px); font-weight: 620; letter-spac
 .project-card { display: flex; min-width: 0; flex-direction: column; overflow: hidden; border: 1px solid #dfe2d8; border-radius: 8px; background: var(--surface); color: var(--ink); box-shadow: 0 4px 14px rgba(37, 49, 39, .035); transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
 .project-card:hover { transform: translateY(-3px); border-color: #cad4c7; box-shadow: 0 11px 25px rgba(37, 49, 39, .09); }
 .project-visual { position: relative; display: flex; min-height: 215px; align-items: center; justify-content: center; overflow: hidden; padding: 20px; }
-.visual-market { background: #e9e4d9; }
-.visual-pharmacy { background: #e4ebe6; }
-.visual-health { background: #eae6df; }
 .visual-language { background: #e9ece2; }
 .visual-immunization { background: #e9ede8; }
-.visual-caption { position: absolute; right: 12px; bottom: 10px; padding: 3px 7px; border-radius: 3px; background: rgba(255,254,250,.82); color: #657168; font-size: 8px; letter-spacing: .02em; }
-.mock-top { position: absolute; top: 22px; right: 25px; left: 25px; display: flex; align-items: center; gap: 14px; color: #4b574e; font-size: 8px; }
-.mock-brand { color: #3d5b46; font-size: 12px; font-weight: 800; letter-spacing: -.06em; }
-.mock-search { flex: 1; padding: 5px 9px; border: 1px solid rgba(73,81,69,.15); border-radius: 4px; background: rgba(255,254,250,.6); color: #899087; }
-.mock-bag { white-space: nowrap; }
-.mock-bag b { margin-left: 3px; padding: 2px 4px; border-radius: 7px; background: #506d55; color: white; }
-.market-layout { display: grid; width: min(100%, 390px); grid-template-columns: 33px 1fr; gap: 13px; margin-top: 25px; }
-.market-side { display: flex; flex-direction: column; gap: 11px; padding-top: 5px; }
-.market-side i { display: block; width: 24px; height: 5px; border-radius: 6px; background: #c6c7b9; }
-.market-side i:first-child { width: 30px; background: #647c5c; }
-.mock-heading { display: flex; flex-direction: column; gap: 4px; }
-.mock-heading small { color: #798375; font-size: 7px; font-weight: 750; letter-spacing: .11em; }
-.mock-heading strong { color: #26362c; font-family: Georgia, serif; font-size: 19px; font-weight: 600; letter-spacing: -.04em; }
-.product-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 11px; }
-.product-block { position: relative; height: 67px; overflow: hidden; border-radius: 4px; background: #d4b99d; }
-.product-block::before, .product-block::after { position: absolute; content: ""; }
-.product-one::before { inset: 14px 22px 12px; border-radius: 40% 40% 6px 6px; background: #8c9a7b; }
-.product-one::after { top: 12px; left: 45%; width: 7px; height: 8px; border-radius: 50%; background: #6f805f; }
-.product-two { background: #d7ddcf; }
-.product-two::before { inset: 16px 17px 13px; border-radius: 5px; background: #b77a58; transform: rotate(-8deg); }
-.product-three { background: #d5d3c6; }
-.product-three::before { inset: 19px 19px 15px; border-radius: 50%; background: #718770; }
-.market-foot { display: flex; justify-content: space-between; margin-top: 9px; color: #667063; font-size: 8px; }
-.pharmacy-shell { display: grid; width: min(100%, 390px); min-height: 160px; grid-template-columns: 80px 1fr; overflow: hidden; border: 1px solid rgba(74, 96, 78, .15); border-radius: 7px; background: #fffefa; box-shadow: 0 8px 18px rgba(47, 66, 50, .08); }
-.pharmacy-nav { display: flex; flex-direction: column; gap: 13px; padding: 16px 10px; background: #385343; }
-.pharmacy-nav b { margin-bottom: 5px; color: #f6f6ef; font-size: 9px; }
-.pharmacy-nav i { width: 44px; height: 5px; border-radius: 5px; background: rgba(245,247,240,.48); }
-.pharmacy-nav i:first-of-type { background: #d4dfc7; }
-.pharmacy-content { padding: 15px 14px; }
-.pharmacy-content .mock-heading strong { font-family: inherit; font-size: 15px; }
-.metric-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-top: 12px; }
-.metric-row span { display: flex; flex-direction: column; gap: 4px; padding: 7px 6px; border: 1px solid #e6e9e0; border-radius: 4px; background: #f8f9f5; }
-.metric-row small { color: #7b857d; font-size: 7px; }
-.metric-row b { color: #455a4a; font-size: 8px; }
-.inventory-lines { display: grid; gap: 6px; margin-top: 11px; }
-.inventory-lines i { height: 4px; border-radius: 5px; background: #e1e6df; }
-.inventory-lines i:nth-child(2) { width: 83%; }
-.inventory-lines i:nth-child(3) { width: 91%; }
-.phone-frame { position: relative; width: 170px; min-height: 185px; padding: 11px 12px 12px; border: 4px solid #3a4940; border-radius: 20px; background: #fbf8f1; box-shadow: 0 10px 20px rgba(50, 56, 45, .14); }
-.phone-status { display: flex; justify-content: space-between; color: #69766b; font-size: 7px; }
-.health-greeting { display: flex; flex-direction: column; gap: 3px; margin-top: 11px; }
-.health-greeting small { color: #6d8a70; font-size: 6px; font-weight: 800; letter-spacing: .12em; }
-.health-greeting strong { color: #36493a; font-size: 11px; }
-.health-greeting span { color: #7b817a; font-size: 7px; }
-.health-tiles { display: flex; gap: 8px; margin-top: 10px; }
-.health-tiles i { display: grid; width: 28px; height: 23px; place-items: center; border-radius: 6px; background: #e7eee3; color: #53705a; font-size: 10px; font-style: normal; }
-.appointment-card { display: flex; flex-direction: column; gap: 3px; margin-top: 9px; padding: 7px 8px; border-radius: 6px; background: #e9e4d9; }
-.appointment-card small { color: #817b6b; font-size: 5px; letter-spacing: .08em; }
-.appointment-card b { color: #4c564b; font-size: 8px; }
-.appointment-card span { color: #75796e; font-size: 6px; }
-.phone-tabs { display: flex; justify-content: space-around; margin-top: 8px; }
-.phone-tabs i { width: 14px; height: 3px; border-radius: 4px; background: #b6c1af; }
+.visual-caption { position: absolute; right: 12px; bottom: 10px; padding: 4px 8px; border: 1px solid rgba(255,255,255,.3); border-radius: 4px; background: rgba(29, 38, 32, .82); color: #fff; font-size: 9px; font-weight: 600; letter-spacing: .01em; }
+.screenshot-visual { min-height: 215px; padding: 0; background: #e9ece7; text-decoration: none; }
+.screenshot-visual img { display: block; width: 100%; height: 215px; min-height: 215px; object-fit: cover; transition: transform .35s ease; }
+.screenshot-visual:hover img { transform: scale(1.02); }
+.screenshot-visual--pharmacy { background: #e5efe9; }
+.screenshot-visual--pharmacy img { object-fit: contain; }
+.screenshot-visual--mobile { min-height: 255px; padding: 0 12px; background: #edf1f7; }
+.screenshot-visual--mobile img { width: auto; max-width: 100%; height: 255px; min-height: 0; object-fit: contain; border-radius: 8px; }
 .lesson-card { width: min(100%, 300px); min-height: 166px; padding: 14px 17px; border: 1px solid rgba(76, 98, 70, .12); border-radius: 8px; background: #fffefa; box-shadow: 0 9px 18px rgba(47, 66, 50, .07); }
 .lesson-top { display: flex; justify-content: space-between; color: #788273; font-size: 7px; font-weight: 750; letter-spacing: .08em; }
 .lesson-mark { float: right; display: grid; width: 43px; height: 43px; place-items: center; border-radius: 50%; background: #e7eddf; color: #547253; font-family: Georgia, serif; font-size: 21px; }
