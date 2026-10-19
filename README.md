@@ -2,9 +2,9 @@
 
 The public site files are in `docs/` on the repository's main branch. `docs/CNAME` points to `bdc.is-a.dev`. The older `portfolio-main.zip` and extracted `portfolio-main` folder under AUCA/Portfolio are historical copies; edit this Git checkout for future site changes.
 
-## Update the CV
+## CV
 
-Edit `build_cv.py`, then run it with Python and ReportLab from the repository root. It writes `docs/files/NDJOGOU_David_CV.pdf`; the current copy is also saved in `AUCA/Portfolio/NDJOGOU_David_CV.pdf` for application uploads. The website's `/cv/` page links to this download name.
+The committed PDF at `docs/files/NDJOGOU_David_CV.pdf` is linked from the website's `/cv/` page. The PDF builder is not included in this repository.
 
 ## Update the website
 
