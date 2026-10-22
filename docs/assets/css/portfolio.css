@@ -89,13 +89,14 @@ h2 { margin: 0; font-size: clamp(38px, 5vw, 58px); font-weight: 620; letter-spac
 .visual-language { background: #e9ece2; }
 .visual-immunization { background: #e9ede8; }
 .visual-caption { position: absolute; right: 12px; bottom: 10px; padding: 4px 8px; border: 1px solid rgba(255,255,255,.3); border-radius: 4px; background: rgba(29, 38, 32, .82); color: #fff; font-size: 9px; font-weight: 600; letter-spacing: .01em; }
-.screenshot-visual { min-height: 215px; padding: 0; background: #e9ece7; text-decoration: none; }
-.screenshot-visual img { display: block; width: 100%; height: 215px; min-height: 215px; object-fit: cover; transition: transform .35s ease; }
+.screenshot-visual { min-height: 300px; padding: 0; background: #e9ece7; text-decoration: none; }
+.screenshot-visual img { display: block; width: 100%; height: 300px; min-height: 300px; object-fit: cover; transition: transform .35s ease; }
 .screenshot-visual:hover img { transform: scale(1.02); }
 .screenshot-visual--pharmacy { background: #e5efe9; }
-.screenshot-visual--pharmacy img { object-fit: contain; }
-.screenshot-visual--mobile { min-height: 255px; padding: 0 12px; background: #edf1f7; }
-.screenshot-visual--mobile img { width: auto; max-width: 100%; height: 255px; min-height: 0; object-fit: contain; border-radius: 8px; }
+.screenshot-visual--pharmacy { min-height: 300px; background: #e5efe9; }
+.screenshot-visual--pharmacy img { object-fit: contain; object-position: center; }
+.screenshot-visual--mobile { min-height: 370px; padding: 0 12px; background: #edf1f7; }
+.screenshot-visual--mobile img { width: auto; max-width: 100%; height: 370px; min-height: 0; object-fit: contain; border-radius: 8px; }
 .lesson-card { width: min(100%, 300px); min-height: 166px; padding: 14px 17px; border: 1px solid rgba(76, 98, 70, .12); border-radius: 8px; background: #fffefa; box-shadow: 0 9px 18px rgba(47, 66, 50, .07); }
 .lesson-top { display: flex; justify-content: space-between; color: #788273; font-size: 7px; font-weight: 750; letter-spacing: .08em; }
 .lesson-mark { float: right; display: grid; width: 43px; height: 43px; place-items: center; border-radius: 50%; background: #e7eddf; color: #547253; font-family: Georgia, serif; font-size: 21px; }
@@ -124,6 +125,9 @@ h2 { margin: 0; font-size: clamp(38px, 5vw, 58px); font-weight: 620; letter-spac
 .project-card h3 { margin: 0 0 8px; font-size: 21px; font-weight: 650; letter-spacing: -.045em; line-height: 1.15; }
 .project-card-copy > p:not(.project-type):not(.stack) { margin: 0; color: #59645c; font-size: 12px; line-height: 1.65; }
 .project-bottomline { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 12px; margin-top: auto; padding-top: 17px; }
+.project-links { display: inline-flex; flex: none; align-items: center; gap: 9px; }
+.project-preview-link { color: var(--sage-dark); font-size: 10px; font-weight: 650; text-decoration-color: #bdc8b9; text-underline-offset: 3px; white-space: nowrap; }
+.project-preview-link:hover { color: var(--ink); }
 .project-arrow { display: inline-grid; width: 27px; height: 27px; flex: none; place-items: center; border: 1px solid #d9e1d5; border-radius: 50%; background: #f4f6f0; color: var(--sage-dark); font-size: 13px; text-decoration: none; transition: background .18s ease, transform .18s ease; }
 .project-arrow:hover { transform: translate(1px, -1px); background: var(--sage-soft); }
 .project-card-text { min-height: 0; }
