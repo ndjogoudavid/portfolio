@@ -97,6 +97,10 @@ h2 { margin: 0; font-size: clamp(38px, 5vw, 58px); font-weight: 620; letter-spac
 .screenshot-visual--pharmacy img { object-fit: contain; object-position: center; }
 .screenshot-visual--mobile { min-height: 370px; padding: 0 12px; background: #edf1f7; }
 .screenshot-visual--mobile img { width: auto; max-width: 100%; height: 370px; min-height: 0; object-fit: contain; border-radius: 8px; }
+.ntchire-gallery { min-height: 445px; justify-content: start; gap: 12px; padding: 18px 14px 14px; background: #edf1f7; overflow-x: auto; }
+.ntchire-screen { display: flex; min-width: 0; flex: 1 0 0; flex-direction: column; align-items: center; gap: 8px; color: #526073; font-size: 10px; font-weight: 650; text-decoration: none; scroll-snap-align: start; }
+.ntchire-screen img { display: block; width: 100%; max-width: 172px; height: 385px; object-fit: cover; object-position: top; border: 1px solid #d7dfeb; border-radius: 10px; box-shadow: 0 5px 15px rgba(33, 50, 73, .12); }
+.ntchire-screen:hover img { transform: translateY(-2px); }
 .lesson-card { width: min(100%, 300px); min-height: 166px; padding: 14px 17px; border: 1px solid rgba(76, 98, 70, .12); border-radius: 8px; background: #fffefa; box-shadow: 0 9px 18px rgba(47, 66, 50, .07); }
 .lesson-top { display: flex; justify-content: space-between; color: #788273; font-size: 7px; font-weight: 750; letter-spacing: .08em; }
 .lesson-mark { float: right; display: grid; width: 43px; height: 43px; place-items: center; border-radius: 50%; background: #e7eddf; color: #547253; font-family: Georgia, serif; font-size: 21px; }
@@ -223,6 +227,9 @@ h2 { margin: 0; font-size: clamp(38px, 5vw, 58px); font-weight: 620; letter-spac
   .project-feature h3 { margin-top: 24px; font-size: 31px; }
   .project-grid { grid-template-columns: 1fr; gap: 13px; margin-top: 12px; }
   .project-visual { min-height: 205px; }
+  .ntchire-gallery { min-height: 390px; justify-content: start; gap: 10px; padding: 14px 12px; scroll-snap-type: x mandatory; }
+  .ntchire-screen { flex: 0 0 145px; }
+  .ntchire-screen img { width: 145px; height: 322px; }
   .project-thumb { height: 220px; }
   .project-subheading { align-items: start; flex-direction: column; gap: 2px; margin-top: 35px; }
   .archive-link { align-items: start; flex-direction: column; gap: 7px; }
